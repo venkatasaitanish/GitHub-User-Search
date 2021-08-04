@@ -1,0 +1,115 @@
+body {
+    background-color: #090918;
+    background-image: linear-gradient(315deg, #090918 0%, #161433 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#submit:hover{
+    background-color: #373775;
+}
+
+#form-el{
+    text-align: center;
+}
+
+input {
+    background-color: #242447;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.6rem;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #242447;
+    background-image: linear-gradient(315deg, #242447 0%, #292946 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.avatar {
+    border: 8px solid #cacad1;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #cacad1;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0.5rem;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 496px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+}
+
+.repo {
+    background-color: #cacad1;
+    border-radius: 5px;
+    display: inline-block;
+    color: #161616;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.repo:hover{
+    background-color: #8e8e92;
+    color: #161616;
+}
+
+i{
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0rem 0.5rem;
+}
+
+@media only screen and (max-width: 540px) { 
+    .user-info ul{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .card{
+        min-width: 540px;
+    }
+}
